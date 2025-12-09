@@ -1,4 +1,12 @@
-﻿#region Parameters
+﻿# This script uses code of Fido by Pete Batard:
+#
+# Copyright © 2019-2025 Pete Batard <pete@akeo.ie>
+# Command line support: Copyright © 2021 flx5
+# ConvertTo-ImageSource: Copyright © 2016 Chris Carter
+#
+# License of original Fido: GNU General Public License
+
+#region Parameters
 param(
 	# (Optional) The title to display on the application window.
 	[string]$AppTitle = "FidoArch - Archive.org ISO Downloader",
