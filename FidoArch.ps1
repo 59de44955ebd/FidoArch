@@ -147,43 +147,64 @@ $WindowsVersions = @(
 	),
 	@(
 		@("Windows 8.1"),
-		@("-")
+		@("-"),
+		@("Enterprise"),
+		@("Pro"),
+		@("Pro with Media Center")
 	),
 	@(
 		@("Windows 8"),
-		@("-")
+		@("-"),
+		@("Enterprise"),
+		@("Pro"),
+		@("Pro with Media Center")
 	),
 	@(
 		@("Windows 7"),
-		@("-")
+		@("-"),
+		@("Ultimate"),
+		@("Enterprise"),
+		@("Pro"),
+		@("Home Premium"),
+		@("Home Basic"),
+		@("Starter"),
+		@("SP1")
 	),
 	@(
 		@("Windows Vista"),
-		@("-")
+		@("-"),
+		@("Ultimate"),
+		@("Enterprise"),
+		@("Pro"),
+		@("Home Premium"),
+		@("Home Basic"),
+		@("SP1"),
+		@("SP2")
 	),
 	@(
 		@("Windows XP"),
-		@("-")
+		@("-"),
+		@("Pro"),
+		@("Home"),
+		@("Media Center"),
+		@("Tablet PC"),
+		@("SP1"),
+		@("SP2"),
+		@("SP3")
 	),
 	@(
 		@("Windows 2000"),
-		@("-")
+		@("-"),
+		@("Pro"),
+		@("Server"),
+		@("Advanced Server")
 	),
 	@(
-		@("Windows NT 4.0"),
-		@("-")
-	),
-	@(
-		@("Windows NT 3.51"),
-		@("-")
-	),
-	@(
-		@("Windows NT 3.5"),
-		@("-")
-	),
-	@(
-		@("Windows NT 3.1"),
-		@("-")
+		@("Windows NT"),
+		@("4.0"),
+		@("3.51"),
+		@("3.5"),
+		@("3.1")
 	),
 	@(
 		@("Windows ME"),
