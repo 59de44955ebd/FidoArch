@@ -122,6 +122,7 @@ if (!$Cmd) {
 $WindowsVersions = @(
 	@(
 		@("Windows 11"),
+		@("25H2"),
 		@("24H2"),
 		@("23H2"),
 		@("22H2"),
@@ -386,7 +387,7 @@ function Get-Windows-Editions([string]$SelectedVersion, [string]$SelectedRelease
 	}
 
 	$win_flavor_esc = [URI]::EscapeUriString($win_flavor)
-	$response = Invoke-WebRequest -Uri "https://archive.org/services/search/v1/scrape?q=%28%22$($win_flavor_esc)%22%29%20AND%20collection%3A%28cdromimages%29&fields=title" -UseBasicParsing
+	$response = Invoke-WebRequest -Uri "https://archive.org/services/search/v1/scrape?q=%28%22$($win_flavor_esc)%22%29%20AND%20collection%3A%28cdromimages%20OR%20cdrom_contributions%29&fields=title" -UseBasicParsing
 	$res = $response | ConvertFrom-Json
 	foreach ($item in $res.items )
 	{
